@@ -1,0 +1,26 @@
+{
+  "profiles": {
+    "InitialWordAnalysis": {
+      "commandName": "Project",
+      "commandLineArgs": "process:tests",
+      "environmentVariables": {
+        "AZ_BATCH_TASK_ID": "task_1",
+        "AZ_BATCH_JOB_ID": "job_1",
+        "AZ_BATCH_NODE_ID": "node_1",
+        "AZ_BATCH_TASK_DIR": "TASK_OUTPUT",
+        "AZ_BATCH_NODE_SHARED_DIR": "SHARED_DIR"
+      }
+    },
+    "WSL": {
+      "commandName": "WSL2",
+      "environmentVariables": {
+        "AZ_BATCH_TASK_ID": "task_1",
+        "AZ_BATCH_JOB_ID": "job_1",
+        "AZ_BATCH_NODE_ID": "node_1",
+        "AZ_BATCH_TASK_DIR": "TASK_OUTPUT",
+        "AZ_BATCH_NODE_SHARED_DIR": "SHARED_DIR"
+      },
+      "distributionName": ""
+    }
+  }
+}
