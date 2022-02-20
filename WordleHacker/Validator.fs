@@ -69,4 +69,5 @@ let createValidatorForGameState (positionStates: PositionState array) =
                     // Otherwise, return the list of permitted letters as-is.
                     | _ -> possible) allLetters)
 
+    // Return our world validator based on the constraints above.
     Validator.validateWord (requiredLetterCounts, possibleLettersByIdx)

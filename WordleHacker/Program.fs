@@ -46,11 +46,12 @@ let rec iterateGame words =
             nextBestGuesses
             |> Seq.iter (printfn "   %s")
 
-            iterateGame possibleWords
         else
             nextBestGuesses
             |> List.exactlyOne
             |> printfn "\nThe next best word is '%s'."
+
+        iterateGame possibleWords
 
     elif possibleWords.Length = 1 then
         possibleWords
